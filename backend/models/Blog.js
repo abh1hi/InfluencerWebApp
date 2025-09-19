@@ -13,6 +13,10 @@ const BlogSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     },
+    tags: {
+        type: [String],
+        default: []
+    },
     date: {
         type: Date,
         default: Date.now
